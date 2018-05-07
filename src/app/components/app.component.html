@@ -1,0 +1,20 @@
+﻿<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  <ng2-slim-loading-bar [height]="'4px'" [color]="'#d9534f'"></ng2-slim-loading-bar>
+  <div class="row pb-8">
+    <div class="col-sm-4 text-center">
+      <a class="navbar-brand mt-minus-8 activeTab" [routerLink]="['/main']" [style.color]="activeTab == 1 ? 'white' : null"
+         (click)="activeTab = 1">
+        <i class="fa fa-sitemap fa-2x" aria-hidden="true" title="Home"></i><br>TOUR LIST
+      </a>
+      <a class="navbar-brand mt-minus-8" [routerLink]="['/create-tour']" [style.color]="activeTab == 2 ? 'white' : null"
+         (click)="activeTab = 2">
+        <i class="fa fa-tasks fa-2x" aria-hidden="true" title="Projects"></i><br>CREATE TOUR
+      </a>
+    </div>
+    <div class="col-sm-4">
+      <h1 class="text-center" style="color: #FFFFFF">Tour Planner</h1>
+    </div>
+    <div class="col-sm-4"></div>
+  </div>
+</nav>
+<router-outlet></router-outlet>
